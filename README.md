@@ -1,10 +1,3 @@
-## 🔐 Project Title
-
-**Hybrid Deep Learning Intrusion Detection System (Autoencoder + LSTM) for Network Traffic Analysis**
-
-
-
-```markdown
 # 🔐 Hybrid Deep Learning Intrusion Detection System
 
 A machine learning–based Intrusion Detection System (IDS) that combines an **Autoencoder for feature learning** and an **LSTM network for sequential analysis** to detect malicious network activity using the KDDCup99 dataset.
@@ -59,20 +52,16 @@ It contains network connection records labeled as:
 ## 🧠 Model Architecture
 
 ### Autoencoder
-```
 
 Input → Dense(32) → Dense(16) → Dense(8) → Dense(16) → Dense(32) → Output
 
-```
 
 ### LSTM Classifier
-```
 
 LSTM(64, return_sequences=True)
 LSTM(32)
 Dense(1, sigmoid)
 
-```
 
 ---
 
@@ -91,12 +80,10 @@ Dense(1, sigmoid)
 
 The system simulates real-time monitoring:
 
-```
 
 Packet 1 | Risk Score: 0.12 | 🟢 NORMAL
 Packet 2 | Risk Score: 0.87 | ⚠️ ATTACK
 
-```
 
 A risk threshold (0.5) is used to classify events.
 
@@ -142,13 +129,7 @@ The model evaluates network traffic and produces:
 
 ---
 
-## 👨‍💻 Author
-
-Ramisa Ali Salwa
-
----
 
 ## 📜 License
 
 This project is for educational and research purposes only.
-
